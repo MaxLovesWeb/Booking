@@ -17,6 +17,7 @@ export default {
     success(data) {
       this.$store.dispatch('auth/setUser', data)
       this.$router.push({ name: 'profile' })
+      //this.$toast.success('Your profile successfully updated.')
     }
   }
 }
