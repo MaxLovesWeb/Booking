@@ -122,6 +122,9 @@ export default {
           { title: 'Profile', icon: 'person', to: {name: 'profile'}, exact: false }
         ],
         [
+          { title: 'Rooms', icon: 'home', to: {name: 'rooms'}, exact: false }
+        ],
+        [
           { title: 'Logout', icon: 'power_settings_new', action: this.logout }
         ]
       ]

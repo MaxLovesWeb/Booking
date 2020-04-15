@@ -22,7 +22,13 @@ export default [
             { path: '', name: 'profile', component: require('$comp/admin/profile/Profile').default },
             { path: 'edit', name: 'profile-edit', component: require('$comp/admin/profile/edit/ProfileEdit').default }
           ]
-        }
+        },
+        { path: 'rooms', component: require('$comp/admin/rooms/RoomWrapper').default, children:
+          [
+            { path: '', name: 'rooms', component: require('$comp/admin/rooms/Rooms').default },
+           // { path: 'edit', name: 'room-edit', component: require('$comp/admin/rooms/edit/RoomEdit').default }
+          ]
+        },
       ]
     },
   ]),
