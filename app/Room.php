@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Room extends Model
 {
-    use Bookable;
+   // use Bookable;
 }
