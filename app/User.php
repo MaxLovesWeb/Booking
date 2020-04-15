@@ -6,6 +6,7 @@ use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Notifications\ResetPassword as ResetPasswordNotification;
+use Illuminate\Support\Str;
 
 class User extends Authenticatable implements JWTSubject
 {
@@ -34,7 +35,7 @@ class User extends Authenticatable implements JWTSubject
      */
     public static function generatePassword($length = 32)
     {
-        return bcrypt(str_random($length));
+        return bcrypt(Str::random($length));
     }
 
     /**
